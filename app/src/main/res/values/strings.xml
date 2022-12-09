@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">WorkoutBuddy</string>
+    <!-- PlaceHolder for blank fragments -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- MenuFragment Strings -->
+    <string name="menu_text_welcome">Welcome to WorkoutBuddy</string>
+    <string name="menu_button_startWorkout">Start Workout</string>
+    <string name="menu_button_customizeWorkout">Customize Workout</string>
+    <string name="menu_button_addExercise">Add Exercise</string>
+
+
+    <!-- WorkoutFragment Strings -->
+    <string name="workout_button_finishedWorkout">Finished Workout</string>
+
+    <!-- ResultFragment Strings -->
+    <string name="result_text_workoutComplete">Workout Complete!!!</string>
+    <string name="result_button_mainMenu">Main Menu</string>
+
+    <!-- ExerciseFragment Strings -->
+    <string name="exercise_edit_hint_exercise">Enter Name Of Exercise</string>
+    <string name="exercise_edit_hint_reps"># Reps</string>
+    <string name="exercise_edit_hint_sets"># Sets</string>
+    <string name="exercise_button_newExercise">Add Exercise</string>
+    <string name="exercise_button_startWorkout">Main Menu</string>
+
+    <!-- ViewExercisesFragment Strings -->
+    <string name="viewExercises_button_startWorkout">Start Workout</string>
+    <string name="viewExercises_button_addExercise">Add Exercise</string>
+    <string name="viewExercises_button_clearAll">Clear All</string>
+
+    <string name="viewExercises_button_mainMenu">Main Menu</string>
+
+    <!-- WorkoutFragment Strings -->
+    <string name="add_set">Set +</string>
+
+
+    <!-- Trying to create a key value pair array so we can reference the muscles by ID -->
+    <string-array name="muscles_array">
+        <item>Select Muscle Group</item>
+        <item>Arms</item>
+        <item>Back</item>
+        <item>Legs</item>
+        <item>Core</item>
+    </string-array>
+
+    <string-array name="muscles_array_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Menu Bottom Items -->
+    <string name="menu_bottom_workout">Workout</string>
+    <string name="menu_bottom_exercises">Exercises</string>
+    <string name="menu_bottom_create">Create</string>
+    <string name="menu_bottom_settings">Settings</string>
+    <string name="menu_bottom_about">About</string>
+
+</resources>

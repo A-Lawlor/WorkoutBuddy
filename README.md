@@ -1,2 +1,2 @@
-# WorkoutBuddy
-Working planning application for Android
+# WorkoutBuddy Android Application
+# To run use import as new project in Android Studio

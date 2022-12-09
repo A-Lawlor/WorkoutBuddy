@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.example.workoutbuddy.WorkoutFragment"
+        android:label="Workout"
+        tools:layout="@layout/fragment_workout" >
+        <action
+            android:id="@+id/action_workoutFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.workoutbuddy.MenuFragment"
+        android:label="Welcome Menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_viewExercisesFragment"
+            app:destination="@id/viewExercisesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.workoutbuddy.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.workoutbuddy.ResultsFragment"
+        android:label="Result">
+        <action
+            android:id="@+id/action_resultsFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <argument
+            android:name="stopwatchMS"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.example.workoutbuddy.ExercisesFragment"
+        android:label="Exercise"
+        tools:layout="@layout/fragment_exercises" >
+        <action
+            android:id="@+id/action_exercisesFragment_to_viewExercisesFragment"
+            app:destination="@id/viewExercisesFragment" />
+        <action
+            android:id="@+id/action_exercisesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewExercisesFragment"
+        android:name="com.example.workoutbuddy.ViewExercisesFragment"
+        android:label="fragment_view_exercises"
+        tools:layout="@layout/fragment_view_exercises" >
+        <action
+            android:id="@+id/action_viewExercisesFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+        <action
+            android:id="@+id/action_viewExercisesFragment_to_exercisesFragment"
+            app:destination="@id/exercisesFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/exercisesFragment"
+        android:title="@string/menu_bottom_create"
+        android:icon="@drawable/create_workout_img"/>
+    <item
+        android:id="@+id/viewExercisesFragment"
+        android:title="@string/menu_bottom_exercises"
+        android:icon="@drawable/view_exercises_img"/>
+    <item
+        android:id="@+id/workoutFragment"
+        android:title="@string/menu_bottom_workout"
+        android:icon="@drawable/track_workout_img"/>
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="@string/menu_bottom_about"
+        android:icon="@drawable/info_icon_img"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/menu_bottom_settings"
+        android:icon="@drawable/settings_icon_img"/>
+
+
+</menu>

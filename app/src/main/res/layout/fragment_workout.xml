@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutFragment">
+
+
+    <Button
+        android:id="@+id/button_finished_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0F89CF"
+        android:text="@string/workout_button_finishedWorkout"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_finished_workout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toEndOf="@+id/button_finished_workout"
+        app:layout_constraintTop_toTopOf="@+id/button_finished_workout" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="580sp"
+        android:layout_marginTop="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Main Linear Layout Hosting up to 10 exercises per workout -->
+        <LinearLayout
+            android:layout_width="380sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar0"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise0"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType0"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText0"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/workoutBarLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise1"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType1"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText1"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/workoutBarLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise2"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType2"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText2"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise3"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType3"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText3"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise4"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType4"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText4"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise5"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType5"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText5"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar6"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise6"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType6"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText6"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar7"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise7"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType7"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText7"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar8"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise8"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType8"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText8"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workoutBarLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/workoutBar9"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exercise9"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="70sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="#80808080">
+
+                <TextView
+                    android:id="@+id/exerciseTextType9"
+                    android:layout_width="80sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/exerciseText9"
+                    android:layout_width="180sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/setButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_set"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
