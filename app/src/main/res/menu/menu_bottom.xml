@@ -16,10 +16,6 @@
         android:id="@+id/aboutFragment"
         android:title="@string/menu_bottom_about"
         android:icon="@drawable/info_icon_img"/>
-    <item
-        android:id="@+id/settingsFragment"
-        android:title="@string/menu_bottom_settings"
-        android:icon="@drawable/settings_icon_img"/>
 
 
 </menu>

@@ -3,9 +3,6 @@
     <!-- PlaceHolder for blank fragments -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- AboutFragment Strings -->
-    <string name="about_text">This app was made by Anthony Lawlor, James Dimino, and Ryan Casebolt, for Professor Lin\'s Mobile App Programming class the University of Massachusetts Lowell. This app was created to promote a more enjoyable and accessible workout experience for all. Just add your favorite workouts and keep yourself accountable and results are guaranteed! Version 1.0</string>
-
     <!-- MenuFragment Strings -->
     <string name="menu_text_welcome">Welcome to WorkoutBuddy</string>
     <string name="menu_button_startWorkout">Start Workout</string>
@@ -37,6 +34,14 @@
     <!-- WorkoutFragment Strings -->
     <string name="add_set">Set +</string>
 
+    <!-- AboutFragment Strings -->
+    <string name="about_text">This app was made by Anthony Lawlor, James Dimino, and Ryan Casebolt, for Professor Lin\'s Mobile App Programming I class at the University of Massachusetts Lowell. This app was created to promote a more enjoyable and accessible workout experience for all. Just add your favorite workouts and keep yourself accountable and results are guaranteed! Version 1.0</string>
+    <string name="about_title">About:</string>
+
+    <!-- SettingsFragment Strings -->
+    <string name="settings_title">Settings:</string>
+    <string name="setting1">Color theme:</string>
+    <string name="setting2">Username:</string>
 
     <!-- Trying to create a key value pair array so we can reference the muscles by ID -->
     <string-array name="muscles_array">
