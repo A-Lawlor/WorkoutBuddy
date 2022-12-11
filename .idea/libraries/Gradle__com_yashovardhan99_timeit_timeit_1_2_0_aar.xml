@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.yashovardhan99.timeit:timeit:1.2.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3db4c7e2af88e5c9741c840788896407/transformed/timeit-1.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3db4c7e2af88e5c9741c840788896407/transformed/timeit-1.2.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3db4c7e2af88e5c9741c840788896407/transformed/timeit-1.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c9f57553f8339abdee1b118622e3a633/transformed/timeit-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c9f57553f8339abdee1b118622e3a633/transformed/timeit-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c9f57553f8339abdee1b118622e3a633/transformed/timeit-1.2.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yashovardhan99.timeit/timeit/1.2.0/72b870815c522a87ca3d292b2ae0bba97d5f9537/timeit-1.2.0-javadoc.jar!/" />

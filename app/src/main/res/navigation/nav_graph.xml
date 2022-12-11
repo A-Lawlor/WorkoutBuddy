@@ -69,4 +69,9 @@
             android:id="@+id/action_viewExercisesFragment_to_exercisesFragment"
             app:destination="@id/exercisesFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.workoutbuddy.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>

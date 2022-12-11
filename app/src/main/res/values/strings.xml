@@ -3,6 +3,9 @@
     <!-- PlaceHolder for blank fragments -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- AboutFragment Strings -->
+    <string name="about_text">This app was made by Anthony Lawlor, James Dimino, and Ryan Casebolt, for Professor Lin\'s Mobile App Programming class the University of Massachusetts Lowell. This app was created to promote a more enjoyable and accessible workout experience for all. Just add your favorite workouts and keep yourself accountable and results are guaranteed! Version 1.0</string>
+
     <!-- MenuFragment Strings -->
     <string name="menu_text_welcome">Welcome to WorkoutBuddy</string>
     <string name="menu_button_startWorkout">Start Workout</string>
