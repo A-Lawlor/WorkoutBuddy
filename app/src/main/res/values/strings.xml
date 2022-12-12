@@ -34,6 +34,20 @@
     <!-- WorkoutFragment Strings -->
     <string name="add_set">Set +</string>
 
+    <!-- SettingFragment Strings -->
+    <string-array name="settings_array">
+        <item>Default</item>
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+    </string-array>
+
+    <string name="settings_submit">Submit</string>
+    <string name="settings_hint_name">Enter First Name</string>
+    <string name="settings_selectColorTheme">Select App Color Theme</string>
+
 
     <!-- Trying to create a key value pair array so we can reference the muscles by ID -->
     <string-array name="muscles_array">

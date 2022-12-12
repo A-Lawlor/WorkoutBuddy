@@ -38,15 +38,17 @@ public class WorkoutFragment extends Fragment {
         View view = binding.getRoot();
 
         ExerciseDatabase db = ExerciseDatabase.getDbInstance(this.getActivity().getApplicationContext());
+        Settings[] settingsDB = db.exerciseDao().getAllSettings().toArray(new Settings[0]);
+
+        binding.buttonFinishedWorkout.setBackgroundColor(settingsDB[0].color);
 
         //Max value for each progress bar
         int max = binding.workoutBar0.getMax();
 
-        //Main blue theme color
-        int appMainColor = Color.parseColor("#0F89CF");
 
-        //Main blue theme transparent
-        int appMainColorTrans = Color.parseColor("#800F89CF");
+
+        int appMainColor = settingsDB[0].color;
+        int appMainColorTrans = settingsDB[0].fadedColor;
 
 
         //Gets all workouts added from viewExercisesFragment
@@ -62,52 +64,62 @@ public class WorkoutFragment extends Fragment {
             switch (i) {
                 case 0: binding.exercise0.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout0.setVisibility(View.VISIBLE);
+                        binding.setButton0.setBackgroundColor(appMainColor);
                         binding.exerciseTextType0.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText0.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
 
                         break;
                 case 1: binding.exercise1.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout1.setVisibility(View.VISIBLE);
+                        binding.setButton1.setBackgroundColor(appMainColor);
                         binding.exerciseTextType1.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText1.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 2: binding.exercise2.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout2.setVisibility(View.VISIBLE);
+                        binding.setButton2.setBackgroundColor(appMainColor);
                         binding.exerciseTextType2.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText2.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 3: binding.exercise3.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout3.setVisibility(View.VISIBLE);
+                        binding.setButton3.setBackgroundColor(appMainColor);
                         binding.exerciseTextType3.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText3.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 4: binding.exercise4.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout4.setVisibility(View.VISIBLE);
+                        binding.setButton4.setBackgroundColor(appMainColor);
                         binding.exerciseTextType4.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText4.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 5: binding.exercise5.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout5.setVisibility(View.VISIBLE);
+                        binding.setButton5.setBackgroundColor(appMainColor);
                         binding.exerciseTextType5.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText5.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 6: binding.exercise6.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout6.setVisibility(View.VISIBLE);
+                        binding.setButton6.setBackgroundColor(appMainColor);
                         binding.exerciseTextType6.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText6.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 7: binding.exercise7.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout7.setVisibility(View.VISIBLE);
+                        binding.setButton7.setBackgroundColor(appMainColor);
                         binding.exerciseTextType7.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText7.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 8: binding.exercise8.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout8.setVisibility(View.VISIBLE);
+                        binding.setButton8.setBackgroundColor(appMainColor);
                         binding.exerciseTextType8.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText8.setText(workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;
                 case 9: binding.exercise9.setVisibility(View.VISIBLE);
                         binding.workoutBarLayout9.setVisibility(View.VISIBLE);
+                        binding.setButton9.setBackgroundColor(appMainColor);
                         binding.exerciseTextType9.setText("[" + workoutDB[i].muscleGroup + "]");
                         binding.exerciseText9.setText("[" + workoutDB[i].muscleGroup + "] " + workoutDB[i].exerciseName + "\n" + "Reps: " + workoutDB[i].reps + " Sets: " + workoutDB[i].sets);
                         break;

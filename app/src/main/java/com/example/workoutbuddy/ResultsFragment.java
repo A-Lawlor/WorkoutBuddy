@@ -21,6 +21,8 @@ public class ResultsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        binding = FragmentResultsBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
          class Utility{
             public String convertSecondsToHMmSs(long milliseconds) {
@@ -34,14 +36,20 @@ public class ResultsFragment extends Fragment {
 
         Utility utility = new Utility();
 
-        binding = FragmentResultsBinding.inflate(inflater, container, false);
-        View view = binding.getRoot();
 
+
+        ExerciseDatabase db = ExerciseDatabase.getDbInstance(this.getActivity().getApplicationContext());
+        Settings[] settingsDB = db.exerciseDao().getAllSettings().toArray(new Settings[0]);
+
+        binding.resultsConstraint.setBackgroundColor(settingsDB[0].color);
+        binding.mainMenuReusltsButton.setTextColor(settingsDB[0].color);
+
+        db.exerciseDao().deleteAllWorkout();
         Long stopwatchMS = ResultsFragmentArgs.fromBundle(requireArguments()).getStopwatchMS();
         binding.timerResult.setText("Time: " + utility.convertSecondsToHMmSs(stopwatchMS));
 
 
-        binding.getStartedButton.setOnClickListener(new View.OnClickListener() {
+        binding.mainMenuReusltsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavDirections action = ResultsFragmentDirections.actionResultsFragmentToMenuFragment();
