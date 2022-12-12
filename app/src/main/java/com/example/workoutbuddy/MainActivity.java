@@ -40,12 +40,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                if(destination.getId() == R.id.resultsFragment ||
-                    destination.getId() == R.id.menuFragment) {
-                    bottomNavigationView.setVisibility(View.GONE);
-                } else {
                     bottomNavigationView.setVisibility(View.VISIBLE);
-                }
+
             }
         });
     }
