@@ -39,7 +39,7 @@
     <string name="about_title">About</string>
 
     <!-- HelpFragment Strings -->
-    <string name="help_text">To use WorkoutBuddy you need to add exercises to the app. After common exercises have been added you can navigate to the customize workout screen from the main menu where you can add what exercises you want to workout with. After you press start workout you can complete exercises as you workout and get progress on how many sets you have left with the progress bar located about each exercises. After you complete your workout a results screen will show you the total about of time spent on that workout.</string>
+    <string name="help_text">To use WorkoutBuddy you need to add exercises to the app. After exercises have been added you can navigate to the customize workout screen from the main menu where you can specify what exercises you want to workout with. After you press start workout you can complete exercises and get progress on how many sets you have left using the progress bar located above each listed exercise. After hitting the complete workout button a results screen will show you the total about of time spent on that workout.</string>
     <string name="help_title">Help</string>
 
     <!-- SettingFragment Strings -->
