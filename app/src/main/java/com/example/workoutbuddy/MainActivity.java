@@ -52,3 +52,21 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
     }
 }
+
+/**
+ Authors: Anthony Lawlor, James Dimino, Ryan Casebolt
+ Date: 12/11/2022
+ Purpose: The purpose of this assignment is to make an app that allows a user to easily keep track of progress of a current workout session
+ What Learned: We learned about progress bars, Room Databases.
+ Sources of Help: Previous assignments, https://developer.android.com and stackoverflow for trouble shooting (no code was taken directly)
+ Time Spent (Hours): Estimated 48 hours were spent in total on this project including time learning how different libraries worked in Android and how we could use them
+ **/
+
+/*
+     Mobile App Development I -- COMP.4630 Honor Statement
+
+The practice of good ethical behavior is essential for maintaining good order in the classroom, providing an enriching learning experience for students, and training as a practicing computing professional upon graduation. This practice is manifested in the University's Academic Integrity policy. Students are expected to strictly avoid academic dishonesty and adhere to the Academic Integrity policy as outlined in the course catalog. Violations will be dealt with as outlined therein. All programming assignments in this class are to be done by the student alone unless otherwise specified. No outside help is permitted except the instructor and approved tutors.
+I certify that the work submitted with this assignment is mine and was generated in a manner consistent with this document, the course academic policy on the course website on Blackboard, and the UMass Lowell academic code.
+Date: 12/11/2022
+Names: Anthony Lawlor, James Dimino, Ryan Casebolt
+*/

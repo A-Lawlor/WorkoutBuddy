@@ -9,17 +9,15 @@
         android:title="@string/menu_bottom_exercises"
         android:icon="@drawable/view_exercises_img"/>
     <item
-        android:id="@+id/workoutFragment"
-        android:title="@string/menu_bottom_workout"
-        android:icon="@drawable/track_workout_img"/>
-    <item
         android:id="@+id/aboutFragment"
         android:title="@string/menu_bottom_about"
         android:icon="@drawable/info_icon_img"/>
     <item
+        android:id="@+id/helpFragment"
+        android:title="@string/menu_bottom_help"
+        android:icon="@drawable/help_icon"/>
+    <item
         android:id="@+id/settingsFragment"
         android:title="@string/menu_bottom_settings"
         android:icon="@drawable/settings_icon_img"/>
-
-
 </menu>

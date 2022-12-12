@@ -43,9 +43,7 @@ public class WorkoutFragment extends Fragment {
         binding.buttonFinishedWorkout.setBackgroundColor(settingsDB[0].color);
 
         //Max value for each progress bar
-        int max = binding.workoutBar0.getMax();
-
-
+        int max = 100;
 
         int appMainColor = settingsDB[0].color;
         int appMainColorTrans = settingsDB[0].fadedColor;
@@ -134,7 +132,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar0.incrementProgressBy(max/workoutDB[0].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar0.getProgress() >= 98){
+                if(binding.workoutBar0.getProgress() >= 95){
                     binding.workoutBar0.incrementProgressBy(5);
                     binding.exercise0.setBackgroundColor(appMainColorTrans);
                 }
@@ -146,7 +144,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar1.incrementProgressBy(max/workoutDB[1].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar1.getProgress() >= 98){
+                if(binding.workoutBar1.getProgress() >= 95){
                     binding.workoutBar1.incrementProgressBy(5);
                     binding.exercise1.setBackgroundColor(appMainColorTrans);
                 }
@@ -158,7 +156,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar2.incrementProgressBy(max/workoutDB[2].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar2.getProgress() >= 98){
+                if(binding.workoutBar2.getProgress() >= 95){
                     binding.workoutBar2.incrementProgressBy(5);
                     binding.exercise2.setBackgroundColor(appMainColorTrans);
                 }
@@ -170,7 +168,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar3.incrementProgressBy(max/workoutDB[3].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar3.getProgress() >= 98){
+                if(binding.workoutBar3.getProgress() >= 95){
                     binding.workoutBar3.incrementProgressBy(5);
                     binding.exercise3.setBackgroundColor(appMainColorTrans);
                 }
@@ -182,7 +180,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar4.incrementProgressBy(max/workoutDB[4].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar4.getProgress() >= 98){
+                if(binding.workoutBar4.getProgress() >= 95){
                     binding.workoutBar4.incrementProgressBy(5);
                     binding.exercise4.setBackgroundColor(appMainColorTrans);
                 }
@@ -194,7 +192,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar5.incrementProgressBy(max/workoutDB[5].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar5.getProgress() >= 98){
+                if(binding.workoutBar5.getProgress() >= 95){
                     binding.workoutBar5.incrementProgressBy(5);
                     binding.exercise5.setBackgroundColor(appMainColorTrans);
                 }
@@ -206,7 +204,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar6.incrementProgressBy(max/workoutDB[6].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar6.getProgress() >= 98){
+                if(binding.workoutBar6.getProgress() >= 95){
                     binding.workoutBar6.incrementProgressBy(5);
                     binding.exercise6.setBackgroundColor(appMainColorTrans);
                 }
@@ -218,7 +216,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar7.incrementProgressBy(max/workoutDB[7].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar7.getProgress() >= 98){
+                if(binding.workoutBar7.getProgress() >= 95){
                     binding.workoutBar7.incrementProgressBy(5);
                     binding.exercise7.setBackgroundColor(appMainColorTrans);
                 }
@@ -230,7 +228,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar8.incrementProgressBy(max/workoutDB[8].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar8.getProgress() >= 98){
+                if(binding.workoutBar8.getProgress() >= 95){
                     binding.workoutBar8.incrementProgressBy(5);
                     binding.exercise8.setBackgroundColor(appMainColorTrans);
                 }
@@ -242,7 +240,7 @@ public class WorkoutFragment extends Fragment {
             public void onClick(View view) {
                 binding.workoutBar9.incrementProgressBy(max/workoutDB[9].sets);
                 //Catch if progress is not completely divisible by #sets
-                if(binding.workoutBar9.getProgress() >= 98){
+                if(binding.workoutBar9.getProgress() >= 95){
                     binding.workoutBar9.incrementProgressBy(5);
                     binding.exercise9.setBackgroundColor(appMainColorTrans);
                 }

@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/help_icon.xml" value="0.124" />
         <entry key="app/src/main/res/drawable/track_workout_img.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_exercises.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_help.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_results.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.335" />
