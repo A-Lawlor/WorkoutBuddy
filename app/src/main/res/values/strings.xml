@@ -34,6 +34,10 @@
     <!-- WorkoutFragment Strings -->
     <string name="add_set">Set +</string>
 
+    <!-- AboutFragment Strings -->
+    <string name="about_text">This app was made by Anthony Lawlor, James Dimino, and Ryan Casebolt, for Professor Lin\'s Mobile App Programming I class at the University of Massachusetts Lowell. This app was created to promote a more enjoyable and accessible workout experience for all. Just add your favorite workouts and keep yourself accountable and results are guaranteed! Version 1.0</string>
+    <string name="about_title">About:</string>
+
     <!-- SettingFragment Strings -->
     <string-array name="settings_array">
         <item>Default</item>
