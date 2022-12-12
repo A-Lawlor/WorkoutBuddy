@@ -333,8 +333,9 @@ public class WorkoutFragment extends Fragment {
 
         return view;
     }
-
-
-
-
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
 }

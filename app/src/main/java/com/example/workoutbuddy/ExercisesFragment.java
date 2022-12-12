@@ -195,4 +195,9 @@ public class ExercisesFragment extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
 }

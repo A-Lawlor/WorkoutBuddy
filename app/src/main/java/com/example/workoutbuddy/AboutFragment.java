@@ -8,12 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.workoutbuddy.databinding.FragmentAboutBinding;
+import com.example.workoutbuddy.databinding.FragmentSettingsBinding;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link AboutFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class AboutFragment extends Fragment {
+    private FragmentAboutBinding binding;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +63,18 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about, container, false);
+        binding = FragmentAboutBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
+
+        ExerciseDatabase db = ExerciseDatabase.getDbInstance(this.getActivity().getApplicationContext());
+        Settings[] settingsDB = db.exerciseDao().getAllSettings().toArray(new Settings[0]);
+
+        binding.textViewAbout.setTextColor(settingsDB[0].color);
+        return view;
+    }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

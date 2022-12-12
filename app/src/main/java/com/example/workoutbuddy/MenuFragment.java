@@ -69,4 +69,9 @@ public class MenuFragment extends Fragment {
         });
         return view;
     }
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
 }

@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/track_workout_img.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_exercises.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_results.xml" value="0.1" />
