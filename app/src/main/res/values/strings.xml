@@ -44,9 +44,11 @@
         <item>Orange</item>
     </string-array>
 
+    <string name="settings_title">Settings</string>
     <string name="settings_submit">Submit</string>
-    <string name="settings_hint_name">Enter First Name</string>
+    <string name="settings_hint_name">Enter Name</string>
     <string name="settings_selectColorTheme">Select App Color Theme</string>
+    <string name="settings_selectName">Select Username</string>
 
 
     <!-- Trying to create a key value pair array so we can reference the muscles by ID -->

@@ -12,25 +12,41 @@
         android:layout_height="wrap_content"
         android:hint="@string/settings_hint_name"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/settingColorSpinner"
-        app:layout_constraintHorizontal_bias="0.352"
-        app:layout_constraintStart_toStartOf="@+id/settingColorSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/colorSettingsText"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/colorSettingsText"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.317" />
 
     <TextView
         android:id="@+id/colorSettingsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/settings_selectColorTheme"
+        android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/settingColorSpinner"
         app:layout_constraintEnd_toEndOf="@+id/settingColorSpinner"
         app:layout_constraintStart_toStartOf="@+id/settingColorSpinner"
         app:layout_constraintTop_toBottomOf="@+id/settingName" />
 
+    <TextView
+        android:id="@+id/colorSettingsText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_selectName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/settingName"
+        app:layout_constraintEnd_toEndOf="@+id/settingName"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/settingName"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.8" />
+
     <Spinner
         android:id="@+id/settingColorSpinner"
-        android:layout_width="175sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:entries="@array/settings_array"
@@ -47,4 +63,16 @@
         app:layout_constraintEnd_toEndOf="@+id/settingColorSpinner"
         app:layout_constraintStart_toStartOf="@+id/settingColorSpinner"
         app:layout_constraintTop_toBottomOf="@+id/settingColorSpinner" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textAllCaps="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/colorSettingsText"
+        app:layout_constraintStart_toStartOf="@+id/colorSettingsText"
+        tools:layout_editor_absoluteY="53dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

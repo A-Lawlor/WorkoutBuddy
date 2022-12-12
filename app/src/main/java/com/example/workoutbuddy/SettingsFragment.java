@@ -78,7 +78,7 @@ public class SettingsFragment extends Fragment {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                userSettings.name = "Welcome " + editable;
+                userSettings.name = "Welcome Back " + editable;
                 System.out.println(userSettings.name);
             }
         });
