@@ -34,9 +34,15 @@ public class ExercisesFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentExercisesBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
-        ExerciseDatabase db = ExerciseDatabase.getDbInstance(this.getActivity().getApplicationContext());
 
+        ExerciseDatabase db = ExerciseDatabase.getDbInstance(this.getActivity().getApplicationContext());
+        Settings[] settingsDB = db.exerciseDao().getAllSettings().toArray(new Settings[0]);
         //Get incrementer amount for progress bar
+
+        //Change colors
+        binding.addExerciseButton.setBackgroundColor(settingsDB[0].color);
+        binding.mainMenuButton.setBackgroundColor(settingsDB[0].color);
+
         int max = binding.progressBar.getMax();
         int increment = max/4;
 

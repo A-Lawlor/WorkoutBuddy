@@ -28,6 +28,12 @@ public interface ExerciseDao {
     @Delete
     void deleteWorkout(Workout workout);
 
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    void insertSettings(Settings settings);
+
+    @Delete
+    void deleteSettings(Settings settings);
+
 
 //    @Ignore
 //    @Query("SELECT exercise_name FROM exercise_table WHERE exercise_name = :exercise")
@@ -45,5 +51,14 @@ public interface ExerciseDao {
 
     @Query("DELETE FROM workout_table")
     void deleteAllWorkout();
+
+    @Query("SELECT * FROM settings_table")
+    List<Settings> getAllSettings();
+
+    @Query("SELECT * FROM settings_table ORDER BY id LIMIT 1")
+    LiveData<Settings> settingsEmpty();
+
+    @Query("DELETE FROM settings_table")
+    void deleteAllSettings();
 
 }

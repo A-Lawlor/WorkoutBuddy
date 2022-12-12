@@ -1,5 +1,6 @@
 package com.example.workoutbuddy;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -22,6 +23,25 @@ public class MenuFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentMenuBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
+        ExerciseDatabase db = ExerciseDatabase.getDbInstance(this.getActivity().getApplicationContext());
+
+
+        //If no settings exist generate a default settings
+        if(db.exerciseDao().getAllSettings().size() == 0) {
+            Settings defaultSettings = new Settings();
+            defaultSettings.color = Color.parseColor("0F89CF");
+            defaultSettings.name = "Welcome to WorkoutBuddy";
+            defaultSettings.fadedColor = Color.parseColor("#800F89CF");
+            db.exerciseDao().insertSettings(defaultSettings);
+        }
+
+        Settings[] settingsDB = db.exerciseDao().getAllSettings().toArray(new Settings[0]);
+
+        binding.constraintView.setBackgroundColor(settingsDB[0].color);
+        binding.startButton.setTextColor(settingsDB[0].color);
+        binding.customizeButton.setTextColor(settingsDB[0].color);
+        binding.addExerciseButton.setTextColor(settingsDB[0].color);
+        binding.menuWelcomeText.setText(settingsDB[0].name);
 
         binding.startButton.setOnClickListener(new View.OnClickListener() {
             @Override

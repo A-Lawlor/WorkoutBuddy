@@ -15,7 +15,7 @@
     <Button
         android:id="@+id/button_startWorkout"
         android:layout_width="170sp"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:backgroundTint="#0F89CF"
         android:text="@string/viewExercises_button_startWorkout"
         android:textColor="@color/white"
@@ -45,7 +45,7 @@
     <Button
         android:id="@+id/button_addExercise"
         android:layout_width="170sp"
-        android:layout_height="wrap_content"
+        android:layout_height="50sp"
         android:backgroundTint="#0F89CF"
         android:text="@string/viewExercises_button_addExercise"
         android:textColor="@color/white"

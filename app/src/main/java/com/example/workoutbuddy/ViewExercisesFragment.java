@@ -24,16 +24,27 @@ public class ViewExercisesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Context context = this.getActivity().getApplicationContext();
+        binding = FragmentViewExercisesBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
+
         ExerciseDatabase db = ExerciseDatabase.getDbInstance(this.getActivity().getApplicationContext());
+        Settings[] settingsDB = db.exerciseDao().getAllSettings().toArray(new Settings[0]);
+
         db.exerciseDao().deleteAllWorkout();
 
+        //Set the color
 
+        binding.buttonAddExercise.setBackgroundColor(settingsDB[0].color);
+        binding.buttonStartWorkout.setBackgroundColor(settingsDB[0].color);
+        binding.viewExercise0.setBackgroundColor(settingsDB[0].fadedColor);
+        binding.viewExercise2.setBackgroundColor(settingsDB[0].fadedColor);
+        binding.viewExercise4.setBackgroundColor(settingsDB[0].fadedColor);
+        binding.viewExercise6.setBackgroundColor(settingsDB[0].fadedColor);
+        binding.viewExercise8.setBackgroundColor(settingsDB[0].fadedColor);
 
 
         // Inflate the layout for this fragment
-        binding = FragmentViewExercisesBinding.inflate(inflater, container, false);
-        View view = binding.getRoot();
+
         //Gets all ex
 
 
