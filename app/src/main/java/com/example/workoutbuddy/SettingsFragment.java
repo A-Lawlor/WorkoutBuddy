@@ -30,6 +30,7 @@ public class SettingsFragment extends Fragment {
         Settings[] settingsDB = db.exerciseDao().getAllSettings().toArray(new Settings[0]);
 
         userSettings.name = "Welcome to WorkoutBuddy";
+        binding.textTitle.setTextColor(settingsDB[0].color);
         binding.settingsSubmit.setBackgroundColor(settingsDB[0].color);
 
         binding.settingColorSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
